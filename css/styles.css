@@ -1,0 +1,219 @@
+/*  დავალება 1 */
+
+.first_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 500px;
+  background-color: #dda0dd;
+  margin: 150px auto;
+}
+
+.main_button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #dda0dd;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 5px;
+  box-shadow: 4px 4px 5px black, inset 1px 1px 2px white;
+  text-shadow: 3px 3px 3px black;
+  transition: all 0.5s ease;
+}
+
+.main_button:active {
+  box-shadow: inset 4px 4px 5px black, 1px 1px 2px white;
+  text-shadow: 1px 1px 3px black;
+}
+/* დავალება 2 */
+
+.sec_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: box-shadow 1s ease;
+  box-shadow: 0 4px 10px black;
+  width: 550px;
+  height: 600px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.card_image {
+  overflow: hidden;
+  transition: transform 1s ease, filter 1s ease;
+}
+
+.sec_1:hover {
+  box-shadow: 0 4px 20px red;
+}
+
+.card_image:hover {
+  transform: scale(1.5);
+  filter: grayscale(100%);
+}
+
+.title_class {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(106, 1, 1);
+  margin: 10px 0;
+}
+.price_p {
+  font-size: 20px;
+  color: red;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.add_butt {
+  background-color: green;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 80px;
+  height: 40px;
+  border: none;
+  margin-left: 380px;
+}
+/*  დავალება 3 */
+.article_1 {
+  font-size: 140px;
+  color: red;
+  letter-spacing: 20px;
+  animation: flash 0.5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  დავალება 4 */
+
+.dav_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.spinner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  border: 40px solid transparent;
+  border-top-color: red;
+  border-right-color: green;
+  border-bottom-color: green;
+  border-left-color: yellow;
+}
+
+.spinner_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  z-index: 1;
+  color: green;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner:hover {
+  animation-play-state: paused;
+}
+/*  დავალება 5 */
+
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: darkcyan;
+  height: 150px;
+  margin-bottom: 150px;
+}
+
+.header_nav_ul {
+  display: flex;
+  column-gap: 50px;
+}
+
+.nav_li_a {
+  color: white;
+  font-size: 50px;
+  text-shadow: 1px 1px 2px black;
+  transition: color 1s, text-shadow 1s;
+}
+
+.nav_li_a:hover {
+  color: #9a2e7f;
+  text-shadow: 0 0 5px #9a2e7f, 0 0 10px #9a2e7f;
+}
+/*  დავალება 6 */
+
+.dav_6 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  background-color: rgb(13, 199, 137);
+}
+
+.load_cont {
+  width: 80%;
+  height: 30px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 0;
+  background-color: #39ff;
+  border-radius: 8px;
+  animation: loading 4s linear;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
